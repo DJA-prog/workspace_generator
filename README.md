@@ -1,0 +1,1 @@
+CLI workspace generator

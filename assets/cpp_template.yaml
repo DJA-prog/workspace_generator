@@ -1,0 +1,45 @@
+dir: <project_name>
+	file: CMakeLists.txt
+		content: 
+			cmake_minimum_required(VERSION 3.0)
+			project(<project_name>)
+
+			# Add the include directories and link the library
+			include_directories("libs")
+			# include_directories("fuctions")
+
+			add_subdirectory(src)
+
+			# set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+			# set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
+		endContent:
+	file: README.md
+		content:
+			# <project_name>
+		endContent:
+	dir: assets
+	dir: bin
+	dir: build
+	dir: docs
+		file: REAME.md
+			content: 
+				# documentation
+			endContent:
+	dir: examples
+	dir: libs
+	dir: src
+		file: main.cpp
+			content: 
+				#include <iostream>
+				
+				int main(int argc, char **argv)
+				{
+					if (argc > 2)
+					{
+						std::cout << "Usage: " << argv[0] << " <input>" << std::endl;
+					}
+
+					return 0;
+				}
+			endContent:
+	dir: tests
