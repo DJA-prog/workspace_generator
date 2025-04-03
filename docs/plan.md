@@ -10,3 +10,11 @@ Create an application tha can generate a file system for a programming project.
 
 
 workspace templates
+
+## Notes:
+- create a function to falidate a template
+
+
+
+## Template Rules
+- tabs infront
